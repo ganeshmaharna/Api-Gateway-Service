@@ -10,7 +10,7 @@ app.use(express.urlencoded({ extended: true }));
 
 const limiter = rateLimit({
   windowMs: 2 * 60 * 1000, // 2 minutes
-  max: 4, // Limit each IP to 100 requests per `window` (here, per 15 minutes)
+  max: 14, // Limit each IP to 100 requests per `window` (here, per 15 minutes)
 });
 app.use(limiter);
 app.use(
